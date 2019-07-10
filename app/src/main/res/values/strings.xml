@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">BilancioAndroid</string>
+    <string-array name="time_array">
+        <item>One Month</item>
+        <item>One Week</item>
+        <item>Two Weeks</item>
+    </string-array>
+    <string-array name="reminders_array">
+        <item>Day</item>
+        <item>Week</item>
+        <item>Two weeks</item>
+        <item>Month</item>
+    </string-array>
+    <string name="channelName">UserInfo</string>
+    <string name="channelID">Channel0</string>
+    <string-array name="budget_categories">
+        <item>Extra Money</item>
+        <item>Clothing</item>
+        <item>Education</item>
+        <item>Entertainment</item>
+        <item>Food</item>
+        <item>Home Care</item>
+        <item>Personal Care</item>
+        <item>Phone</item>
+        <item>Rent</item>
+        <item>Transportation</item>
+        <item>Utilities</item>
+    </string-array>
+    <string name="title_activity_wallet">My Wallet</string>
+    <string name="title_overview">Overview</string>
+    <string name="title_savings">Savings</string>
+    <string name="title_reminders">Reminders</string>
+    <string name="title_scenarios">Scenarios</string>
+    <string name="title_button_popup_reminders">Reminder Information</string>
+    <string name="below_title_button_popup_reminders">Press on the reminder if you wish to edit it.</string>
+
+    <string name="notificationChannelID">notification</string>
+    <string name="notificationChannelName">channel</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

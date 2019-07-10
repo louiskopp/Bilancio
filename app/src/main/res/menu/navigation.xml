@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_overview"
+        android:enabled="true"
+        android:icon="@drawable/barchart_black"
+        android:iconTint="#FFF"
+        android:title="@string/title_overview" />
+
+    <item
+        android:id="@+id/navigation_wallet"
+        android:enabled="true"
+        android:icon="@drawable/wallet_icon_black"
+        android:iconTint="#FFF"
+        android:title="@string/title_activity_wallet" />
+
+    <item
+        android:id="@+id/navigation_savings"
+        android:enabled="true"
+        android:icon="@drawable/savings_icon_black"
+        android:iconTint="#FFF"
+        android:title="@string/title_savings" />
+
+    <item
+        android:id="@+id/navigation_reminders"
+        android:enabled="true"
+        android:icon="@drawable/notification_bell_black"
+        android:iconTint="#FFF"
+        android:title="@string/title_reminders" />
+
+</menu>

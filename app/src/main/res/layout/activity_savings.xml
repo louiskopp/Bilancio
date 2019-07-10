@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/savingsLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:foreground="?android:attr/selectableItemBackground"
+    tools:context=".View.Savings">
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        style="@style/NavBar"
+        app:itemIconTint="@drawable/bottom_nav_icon"
+        app:itemTextColor="@drawable/bottom_nav_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/navigation" />
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation2"
+        style="@style/NavBar"
+        app:itemIconTint="@drawable/bottom_nav_icon"
+        app:itemTextColor="@drawable/bottom_nav_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/teaching_mode" />
+
+    <Button
+        android:id="@+id/anchor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="96dp"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/wallet_toolbar"
+        style="@style/Toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/settingsBtn"
+                style="@style/SettingsText" />
+
+            <Button
+                android:id="@+id/addGoalButton"
+                style="@style/addButton" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/wallet_toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/savingsView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_weight="1"
+                android:text="Savings:"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/wallet_toolbar" />
+
+            <TextView
+                android:id="@+id/savingsAmt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="TextView"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/wallet_toolbar" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/goalsView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_weight="3"
+                android:text="Savings from Goals:"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                app:layout_constraintStart_toStartOf="@+id/savingsView"
+                app:layout_constraintTop_toBottomOf="@+id/savingsView" />
+
+            <TextView
+                android:id="@+id/goalsAmt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_weight="2"
+                android:gravity="right"
+                android:text="TextView"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/savingsAmt" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="128dp"
+            android:gravity="end"
+            android:text="You have no goals in place"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            app:layout_constraintTop_toBottomOf="@id/goalsView" />
+
+        <ListView
+            android:id="@+id/list_of_goals"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="32dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/scenario_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="?android:attr/colorPrimary"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/navigation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/scenario_show"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Scenario"
+            android:textAppearance="@style/Base.TextAppearance.Widget.AppCompat.ExpandedMenu.Item"
+            android:textColor="?android:attr/textColorSecondary" />
+
+        <TextView
+            android:id="@+id/calculator"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Calculator"
+            android:textColor="?android:attr/textColorSecondary"
+            android:textAppearance="@style/Base.TextAppearance.Widget.AppCompat.ExpandedMenu.Item"/>
+
+        <TextView
+            android:id="@+id/scenario_goto"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:layout_height="match_parent"
+            android:text="Submit Answer"
+            android:textColor="?android:attr/textColorSecondary"
+            android:gravity="center"
+            android:textAppearance="@style/Base.TextAppearance.Widget.AppCompat.ExpandedMenu.Item"
+            />
+    </LinearLayout>
+
+
+
+
+</android.support.constraint.ConstraintLayout>

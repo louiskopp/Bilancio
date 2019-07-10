@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.ColorSchemes">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/wallet_toolbar"
+        style="@style/Toolbar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="0dp"
+            android:paddingStart="0dp"
+            tools:layout_editor_absoluteX="0dp">
+
+            <TextView
+                android:id="@+id/colorSelect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Color Select"
+                android:textColor="?android:attr/textColorSecondary"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:id="@+id/csView1"
+        android:layout_marginTop="32dp"
+        style="@style/lineStyle" />
+
+    <TextView
+        android:id="@+id/red"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:text="Red"
+        android:textAppearance="@android:style/TextAppearance.Material" />
+
+    <TextView
+        android:id="@+id/red2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:text="Red"
+        style="@style/settingsCheckBox"
+        android:textAppearance="@android:style/TextAppearance.Material" />
+
+    <View
+        android:id="@+id/csView2"
+        style="@style/lineStyle" />
+
+    <TextView
+        android:id="@+id/blue"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:text="Blue"
+        android:textAppearance="@android:style/TextAppearance.Material" />
+
+    <TextView
+        android:id="@+id/blue2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:text="Blue"
+        style="@style/settingsCheckBox"
+        android:textAppearance="@android:style/TextAppearance.Material" />
+
+    <View
+        android:id="@+id/csView3"
+        style="@style/lineStyle"/>
+
+    <TextView
+        android:id="@+id/gray"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:text="Gray"
+        android:textAppearance="@android:style/TextAppearance.Material" />
+
+    <TextView
+        android:id="@+id/gray2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:text="Gray"
+        style="@style/settingsCheckBox"
+        android:textAppearance="@android:style/TextAppearance.Material" />
+
+    <View
+        android:id="@+id/csView4"
+        style="@style/lineStyle" />
+
+    <TextView
+        android:id="@+id/black"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:text="Black"
+        android:textAppearance="@android:style/TextAppearance.Material" />
+
+    <TextView
+        android:id="@+id/black2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:text="Black"
+        style="@style/settingsCheckBox"
+        android:textAppearance="@android:style/TextAppearance.Material" />
+
+    <View
+        android:id="@+id/csView5"
+        style="@style/lineStyle" />
+
+    <TextView
+        android:id="@+id/colorblind"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:text="Colorblind"
+        android:textAppearance="@android:style/TextAppearance.Material" />
+
+    <TextView
+        android:id="@+id/colorblind2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:text="Colorblind"
+        style="@style/settingsCheckBox"
+        android:textAppearance="@android:style/TextAppearance.Material" />
+
+    <View
+        android:id="@+id/csView6"
+        style="@style/lineStyle" />
+
+
+    <TextView
+        android:id="@+id/white"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:text="White"
+        android:textAppearance="@android:style/TextAppearance.Material" />
+
+    <TextView
+        android:id="@+id/white2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:text="White"
+        style="@style/settingsCheckBox"
+        android:textAppearance="@android:style/TextAppearance.Material" />
+
+
+    <View
+        android:id="@+id/csView7"
+        style="@style/lineStyle"
+        android:layout_marginBottom="312dp"
+        />
+
+</LinearLayout>

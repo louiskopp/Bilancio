@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/cons"
+    android:layout_height="match_parent"
+    tools:context=".View.Settings">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/wallet_toolbar"
+        style="@style/Toolbar"
+        android:paddingLeft="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="0dp"
+            android:paddingStart="0dp"
+            tools:layout_editor_absoluteX="0dp">
+
+            <TextView
+                android:id="@+id/settingsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="148dp"
+                android:text="Settings"
+                android:textColor="?android:attr/textColorSecondary"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/wallet_toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="@+id/scrollView2">
+
+            <TextView
+                android:id="@+id/appSettings"
+                android:text="Appearance Settings"
+                style="@style/settingsHeadings"/>
+
+            <View
+                android:id="@+id/view1"
+                android:layout_height="1dp"
+                style="@style/lineStyle"/>
+
+            <TextView
+                android:id="@+id/colorScheme"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:gravity="center_vertical"
+                android:text="Color Scheme"
+                android:textAppearance="@android:style/TextAppearance.Material"
+                android:textSize="14sp" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_height="1dp"
+                style="@style/lineStyle"
+                app:layout_constraintBottom_toTopOf="@+id/textSettings"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/textSettings"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_vertical"
+                android:text="Text Settings"
+                android:textAppearance="@android:style/TextAppearance.Material"
+                 />
+
+            <View
+                android:id="@+id/view3"
+                android:layout_height="1dp"
+                style="@style/lineStyle"/>
+
+            <Switch
+                android:id="@+id/viewBudgetSwitch"
+                style="@style/settingsSwitch"
+                android:text="View Overall Budget Bar" />
+
+            <View
+                android:id="@+id/view4"
+                android:layout_height="1dp"
+                style="@style/lineStyle"/>
+
+            <Switch
+                android:id="@+id/viewTodaySwitch"
+                style="@style/settingsSwitch"
+                android:text="View Today Marker" />
+
+            <View
+                android:id="@+id/view5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                style="@style/lineStyle"
+                android:layout_marginBottom="40dp" />
+
+            <TextView
+                android:id="@+id/reminderSettings"
+                android:text="Reminder Settings"
+                style="@style/settingsHeadings" />
+
+            <View
+                android:id="@+id/view6"
+                style="@style/lineStyle"
+                android:layout_height="1dp" />
+
+            <Switch
+                android:id="@+id/enableRemSwitch"
+               style="@style/settingsSwitch"
+                android:text="Enable Custom Reminders" />
+
+            <View
+                android:id="@+id/view7"
+                style="@style/lineStyle"
+                android:layout_height="1dp" />
+
+            <Switch
+                android:id="@+id/dailyRemSwitch"
+               style="@style/settingsSwitch"
+                android:text="Receive Daily Reminders" />
+
+            <View
+                android:id="@+id/view8"
+                style="@style/lineStyle"
+                android:layout_height="1dp"
+                android:layout_marginBottom="40dp"/>
+
+            <TextView
+                android:id="@+id/generalSettings"
+                android:text="General Settings"
+                style="@style/settingsHeadings"/>
+
+            <View
+                android:id="@+id/view9"
+                style="@style/lineStyle"
+                android:layout_height="1dp" />
+
+            <TextView
+                android:id="@+id/advancedSettings"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:gravity="center_vertical"
+                android:text="Advanced Settings"
+                android:textAppearance="@android:style/TextAppearance.Material"
+                app:layout_constraintBottom_toTopOf="@+id/view10"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <View
+                android:id="@+id/view10"
+                style="@style/lineStyle"
+                android:layout_height="1dp"/>
+
+            <Switch
+                android:id="@+id/teachingModeSwitch"
+               style="@style/settingsSwitch"
+                android:text="Teaching Mode" />
+
+            <View
+                android:id="@+id/view11"
+                style="@style/lineStyle"
+                android:layout_height="1dp"
+                android:layout_marginBottom="40dp" />
+
+            <TextView
+                android:id="@+id/teachingSettings"
+                android:text="Teaching Settings"
+                style="@style/settingsHeadings"/>
+
+            <View
+                android:id="@+id/view12"
+                style="@style/lineStyle"
+                android:layout_height="1dp"/>
+
+            <TextView
+                android:id="@+id/resetDefaults"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:gravity="center_vertical"
+                android:text="Reset to Defaults"
+                android:textAppearance="@android:style/TextAppearance.Material"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <View
+                android:id="@+id/view13"
+                style="@style/lineStyle"
+                android:layout_height="1dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/scenario_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="?android:attr/colorPrimary"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/scenario_show"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Scenario"
+            android:textAppearance="@style/Base.TextAppearance.Widget.AppCompat.ExpandedMenu.Item"
+            android:textColor="?android:attr/textColorSecondary" />
+
+        <TextView
+            android:id="@+id/calculator"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Calculator"
+            android:textColor="?android:attr/textColorSecondary"
+            android:textAppearance="@style/Base.TextAppearance.Widget.AppCompat.ExpandedMenu.Item"/>
+
+        <TextView
+            android:id="@+id/scenario_goto"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:layout_height="match_parent"
+            android:text="Submit Answer"
+            android:textColor="?android:attr/textColorSecondary"
+            android:gravity="center"
+            android:textAppearance="@style/Base.TextAppearance.Widget.AppCompat.ExpandedMenu.Item"
+            />
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

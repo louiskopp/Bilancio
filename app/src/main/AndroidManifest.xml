@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.hope.cs.bilancioandroid">
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <supports-screens
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true"
+        />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/iconfinal"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/iconfinal"
+        android:supportsRtl="true"
+        android:theme="@style/White">
+        <activity android:name=".View.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".View.WelcomeActivity" />
+        <activity android:name=".View.BudgetCycle" />
+        <activity android:name=".View.Contacts" />
+        <activity android:name=".View.Password" />
+        <activity android:name=".View.MakeOrPresetBudgets" />
+        <activity
+            android:name=".View.SetUp"
+            android:windowSoftInputMode="stateVisible|adjustNothing" />
+        <activity
+            android:name=".View.ManualSetUp"
+            android:windowSoftInputMode="stateVisible|adjustNothing" />
+        <activity android:name=".View.WalletActivity" />
+        <activity android:name=".View.Settings" />
+        <activity android:name=".View.Overview" />
+        <activity android:name=".View.Savings" />
+        <activity android:name=".View.ReminderActivity" />
+        <activity android:name=".View.CanIAfford" />
+        <activity android:name=".View.AddIncome" />
+        <activity android:name=".View.CanIAffordPart2" />
+        <activity android:name=".View.ColorSchemes" />
+        <activity android:name=".View.TextSettings" />
+        <activity android:name=".View.AdvancedSettings" />
+        <activity android:name=".View.AddReminder" />
+        <activity android:name=".View.EditGoal" />
+        <activity android:name=".View.IndividualBudgetScreen" />
+        <activity android:name=".View.ScenarioActivity" />
+        <activity android:name=".View.Calculator" />
+
+        <receiver
+            android:name=".Controller.MyReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.media.action.DISPLAY_NOTIFICATION" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".View.OverallBudgetOverview" />
+        <activity android:name=".View.EditBudgets" />
+        <activity android:name=".View.AddNewBudget" />
+        <activity android:name=".View.SelectIcon" />
+        <activity android:name=".View.EndOfBudgetCycle" />
+        <activity android:name=".View.HelperContact" />
+        <activity android:name=".View.Threshold" />
+        <activity android:name=".View.Homework" />
+        <activity android:name=".View.Custom" />
+        <activity android:name=".View.Prebuilt" />
+        <activity android:name=".View.CreateScenario" />
+        <activity android:name=".View.Results" />
+        <activity android:name=".View.Response" />
+
+        <service
+            android:name=".Controller.StickyService"
+            android:enabled="true"
+            android:exported="true"></service>
+    </application>
+
+</manifest>

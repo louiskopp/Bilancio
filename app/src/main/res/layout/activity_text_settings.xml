@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.TextSettings">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/wallet_toolbar"
+        style="@style/Toolbar"
+        android:layout_marginBottom="32dp"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="0dp"
+            android:paddingStart="0dp"
+            tools:layout_editor_absoluteX="0dp">
+
+            <TextView
+                android:id="@+id/textSetText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="148dp"
+                android:text="Text Settings"
+                android:textColor="#FFF"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:id="@+id/tsView1"
+        android:layout_height="1dp"
+        android:layout_alignTop="@+id/small"
+        style="@style/lineStyle"/>
+
+    <TextView
+    android:id="@+id/small"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_alignParentStart="true"
+    android:layout_alignTop="@id/tsView1"
+    android:gravity="center_vertical"
+    android:text="Small"
+    android:textAppearance="@android:style/TextAppearance.Material"
+    android:textSize="14sp"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="157dp" />
+
+    <TextView
+        android:id="@+id/small2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@id/tsView1"
+        android:gravity="center_vertical"
+        android:text="Small"
+        style="@style/settingsCheckBox"
+        android:textAppearance="@android:style/TextAppearance.Material"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="157dp" />
+
+    <View
+        android:id="@+id/tsView2"
+        style="@style/lineStyle"
+        android:layout_height="1dp"
+        android:layout_below="@+id/small"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="216dp" />
+
+    <TextView
+        android:id="@+id/medium"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/small"
+        android:gravity="center_vertical"
+        android:text="Medium"
+        android:textAppearance="@android:style/TextAppearance.Material"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="249dp" />
+
+    <TextView
+        android:id="@+id/medium2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/small"
+        android:gravity="center_vertical"
+        android:text="Medium"
+        style="@style/settingsCheckBox"
+        android:textAppearance="@android:style/TextAppearance.Material"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="249dp" />
+
+    <View
+        android:id="@+id/tsView3"
+        android:layout_height="1dp"
+        style="@style/lineStyle"
+         />
+
+    <TextView
+        android:id="@+id/large"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:text="Large"
+        android:textAppearance="@android:style/TextAppearance.Material"
+        android:textSize="22sp"/>
+
+    <TextView
+        android:id="@+id/large2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:text="Large"
+        style="@style/settingsCheckBox"
+        android:textAppearance="@android:style/TextAppearance.Material"
+        android:textSize="22sp"/>
+
+    <View
+        android:id="@+id/tsView4"
+        android:layout_height="1dp"
+        style="@style/lineStyle" />
+
+</LinearLayout>
